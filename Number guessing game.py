@@ -23,7 +23,7 @@ def random_number():
             i += 1
 
     print('Woohoh !! You have Guessed correctly')
-    print(i)
+    print(f'Number of Guesses : {i}')
 
 
 random_number()
