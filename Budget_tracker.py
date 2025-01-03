@@ -12,8 +12,8 @@ def Budget_Tracker():
     print("What would you like to do? :")
     for idx, i in enumerate(to_do, start=1):
         print(f'{idx}.{i}')
-    add = True
-    while add == True :    
+   # add = True
+    while  True :    
         try:    
             choice = int(input('Enter your choice [ 1/2/3 ]: \n'))
             #print(f' {to_do[choice - 1]} ')
@@ -22,6 +22,7 @@ def Budget_Tracker():
                 expense = int(input('enter expense amount '))
                 expenditure += expense
                 expenses.append({'description': description, 'expense': expense } )
+                print("Expense added successfully!")
 
             elif choice == 2:
                 print(f'Total Budget - {Budget} \n')
@@ -30,7 +31,7 @@ def Budget_Tracker():
 
             elif choice == 3:
                 print('Thankyou !!')
-                add = False
+                break
             
             else:
                 print('Invalid Choice !!')
