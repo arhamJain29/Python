@@ -4,9 +4,9 @@ operators = ['+' , '-' , '*']
 
 def prblm_maths():
 
-    num1 = random.randint(1,99)
+    num1 = random.randint(1,99) #generate random numbers
     num2 = random.randint(1,99)
-    ops = random.choice(operators)
+    ops = random.choice(operators) #randomly chooses operators
     
     left = num1
     right = num2
@@ -17,7 +17,7 @@ def prblm_maths():
         yes = input('Do you want to Generate Maths question(y/n): \n')
 
         if yes == 'y':
-            ques = f'{str(left)}  {ops}  {str(right)}'
+            ques = f'{str(left)}  {ops}  {str(right)}' #generate the question 
             s = print(ques)
             ans = int(input('Enter your answer: \n'))
             answer = eval(ques)
@@ -32,10 +32,10 @@ def prblm_maths():
 
         elif yes == 'n':
             print('Thankyou, exiting the program')
-            tru = False
+            tru = False #this will end the loop, hence exit 
 
         else:
-            print('INVALID INPUT')
+            print('INVALID INPUT') 
             
             
 
