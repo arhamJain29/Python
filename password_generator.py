@@ -9,8 +9,8 @@ def password():
     special_character = string.punctuation
 
     character = [] #empty list to append everytime to store the new string of the password
-
-    while tru: #tru = True 
+    tru = True 
+    while tru: #
         yes = input("Do you want to generate a passward(y/n): \n").lower()
         if yes == 'y':
             length = int(input('enter the lenght of the password: \n'))
