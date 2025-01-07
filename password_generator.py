@@ -13,7 +13,7 @@ def password():
     while tru: #
         yes = input("Do you want to generate a passward(y/n): \n").lower()
         if yes == 'y':
-            length = int(input('enter the lenght of the password: \n'))
+            length = int(input('enter the lenght of the password: \n')) #takes input of the max lenght 
             i_char = input('include special character (y/n): ')
             i_digits = input('include Digits (y/n): ')
             i_uppercase = input('include uppercase (y/n): ')
