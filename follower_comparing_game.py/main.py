@@ -23,14 +23,14 @@ def compare():
     elif v2 > v1:
         max = p2['name']
     
-    return p1, p2, max
+    return p1, p2, max # Gives the value of p1 p2 max
 
 def play():
 
     score = 0
 
     while True:
-        p1, p2, max = compare()
+        p1, p2, max = compare() # uses the value from p1 p2 max
 
         print(logo) 
         print(f"Name: {p1['name']}, description: {p1['description']}, country: {p1['country']}")
